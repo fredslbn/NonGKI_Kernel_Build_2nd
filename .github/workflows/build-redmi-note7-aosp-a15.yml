@@ -12,8 +12,8 @@ env:
   CUSTOM_CMDS : "CLANG_TRIPLE=aarch64-linux-gnu-"
   EXTRA_CMDS : "LD=ld.lld LLVM=1 LLVM_IAS=1"
 
-  KERNEL_SOURCE : "https://github.com/frstprjkt/valeryn_xiaomi_sm6115.git"
-  KERNEL_BRANCH : "android13"
+  KERNEL_SOURCE : "https://github.com/fredslbn/valeryn_xiaomi_sm6115.git"
+  KERNEL_BRANCH : "su/android13"
 
   CLANG_SOURCE : "https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.7/LLVM-19.1.7-Linux-X64.tar.xz"
   CLANG_BRANCH : ""
@@ -43,7 +43,7 @@ env:
 
   BOOT_SOURCE : ""
 
-  NEED_DTBO : false
+  NEED_DTBO : true
   NEED_SAFE_DTBO : false
 
   ROM_TEXT : "based_aosp_a13"
