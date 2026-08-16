@@ -15,7 +15,7 @@ env:
   KERNEL_SOURCE : "https://github.com/fredslbn/valeryn_xiaomi_sm6115.git"
   KERNEL_BRANCH : "su/android13"
 
-  CLANG_SOURCE : "https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.7/LLVM-19.1.7-Linux-X64.tar.xz"
+  CLANG_SOURCE : "https://raw.githubusercontent.com/Neutron-Toolchains/antman/main/antman"
   CLANG_BRANCH : ""
 
   GCC_GNU : false
