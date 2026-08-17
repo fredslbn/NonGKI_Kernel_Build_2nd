@@ -492,10 +492,7 @@ index 5e94ec9..dae7cd1 100644
  #include <linux/bootmem.h>
  #include <linux/task_work.h>
  #include <linux/sched/task.h>
-+#ifdef CONFIG_KSU_SUSFS_SUS_MOUNT
-+#include <linux/susfs_def.h>
-+#endif // #ifdef CONFIG_KSU_SUSFS_SUS_MOUNT
- 
+
  #include "pnode.h"
  #include "internal.h"
  
