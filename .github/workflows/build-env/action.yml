@@ -475,6 +475,7 @@ runs:
                 cd clang-custom
                 ${{ env.CURLX }} "${{ env.CLANG_SOURCE }}" antman
                 chmod +x antman
+                ./antman -S --noprogress
                 ./antman --patch=glibc
                 bash antman -S=10032024
 
