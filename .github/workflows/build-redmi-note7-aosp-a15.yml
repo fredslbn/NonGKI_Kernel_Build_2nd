@@ -22,10 +22,10 @@ env:
   CLANG_BRANCH : ""
 
   GCC_GNU : false
-  #GCC_64_SOURCE : "https://github.com/JackA1ltman/Google-GCC-Android-4.9.git"
-  #GCC_64_BRANCH : "aarch64"
-  #GCC_32_SOURCE : "https://github.com/JackA1ltman/Google-GCC-Android-4.9.git"
-  #GCC_32_BRANCH : "arm32"
+  GCC_64_SOURCE : "https://github.com/JackA1ltman/Google-GCC-Android-4.9.git"
+  GCC_64_BRANCH : "aarch64"
+  GCC_32_SOURCE : "https://github.com/JackA1ltman/Google-GCC-Android-4.9.git"
+  GCC_32_BRANCH : "arm32"
 
   DEFCONFIG_SOURCE: ""
   DEFCONFIG_NAME : "vendor/bengal-perf_defconfig"
@@ -95,7 +95,7 @@ env:
 jobs:
   build-kernel:
     name: Redmi Note 7 (Based AOSP A15)
-    runs-on: ubuntu-22.04 # u can changed to ubuntu 22.04, and need container set ubuntu-latest
+    runs-on: ubuntu-latest # u can changed to ubuntu 22.04, and need container set ubuntu-latest
     # container: ubuntu:focal # if u need use arch linux -> archlinux/archlinux:latest or ubuntu 20.04 -> ubuntu:focal
     env:
       CCACHE_COMPILERCHECK: "%compiler% -dumpmachine; %compiler% -dumpversion"
