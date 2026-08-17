@@ -80,7 +80,7 @@ runs:
             patch -p1 < susfs_patch_to_${{ env.KERNEL_VERSION }}.patch || true
             echo "[+] SuSFS Patch completed."
 
-          fi
+          #fi
 
           # Patch .rej find
           if [[ "${{ env.BUILD_DEBUGGER }}" == "true" ]]; then
