@@ -515,9 +515,14 @@ index 5e94ec9..dae7cd1 100644
  static void mnt_free_id(struct mount *mnt)
  {
 +#ifdef CONFIG_KSU_SUSFS_SUS_MOUNT
-+	if (mnt->mnt.mnt_flags & VFSMOUNT_MNT_FLAGS_KSU_UNSHARED_MNT)
-+		return;
++if (mnt->mnt_id >= DEFAULT_KSU_MNT_ID) {
++	ida_free(&susfs_mnt_id_ida, mnt->mnt_id);
++return;
++}
 +
++if (mnt->mnt.mnt_flags & VFSMOUNT_MNT_FLAGS_KSU_UNSHARED_MNT) {
++return;
++}
 +#endif // #ifdef CONFIG_KSU_SUSFS_SUS_MOUNT
 +
  	ida_free(&mnt_id_ida, mnt->mnt_id);
