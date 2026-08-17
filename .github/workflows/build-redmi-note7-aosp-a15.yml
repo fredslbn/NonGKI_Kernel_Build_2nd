@@ -41,7 +41,7 @@ env:
   SUSFS_ENABLE : true
   SUSFS_FIXED : true
 
-  AK3_SOURCE : "https://github.com/osm0sis/AnyKernel3.git"
+  AK3_SOURCE : "https://github.com/Braeed/AnyKernel3.git"
   AK3_BRANCH : "master"
 
   BOOT_SOURCE : ""
@@ -118,13 +118,13 @@ jobs:
       - name: 🔗 Patch for no-kprobe
         uses: ./.github/workflows/patch-no-kprobe
 
-      - name: 🪛 Extra Kernel Options
-        run: |
+      #- name: 🪛 Extra Kernel Options
+       # run: |
           # Only ${{ env.DEVICE_NAME }} use it.
-          cd $GITHUB_WORKSPACE/device_kernel
+          #cd $GITHUB_WORKSPACE/device_kernel
 
           # Lower KernelSU Next need it.
-          echo "CONFIG_KSU_KPROBES_HOOK=n" >> ./arch/arm64/configs/${{ env.DEFCONFIG_NAME }}
+          #echo "CONFIG_KSU_KPROBES_HOOK=n" >> ./arch/arm64/configs/${{ env.DEFCONFIG_NAME }}
           #echo "CONFIG_KSU_LSM_SECURITY_HOOKS=y" >> ./arch/arm64/configs/${{ env.DEFCONFIG_NAME }}
 
      # - name: 🧰 Patch Kernel of Re:Kernel
