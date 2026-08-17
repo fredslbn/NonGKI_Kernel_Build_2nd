@@ -70,7 +70,7 @@ runs:
           }
 
           # Check SuSFS
-          if grep -q "CONFIG_CINTAKU" "fs/namespace.c"; then
+          if grep -q "CONFIG_KSU_SUSFS" "fs/namespace.c"; then
             echo "[-] SuSFS is already patched, Skipped."
             echo "SUSFS_SKIP=true" >> $GITHUB_ENV
 
