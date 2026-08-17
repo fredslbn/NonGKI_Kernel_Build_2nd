@@ -18,11 +18,11 @@ env:
   CLANG_SOURCE : "https://raw.githubusercontent.com/Neutron-Toolchains/antman/main/antman"
   CLANG_BRANCH : ""
 
-  #GCC_GNU : false
-  #GCC_64_SOURCE : "https://github.com/JackA1ltman/Google-GCC-Android-4.9.git"
-  #GCC_64_BRANCH : "aarch64"
-  #GCC_32_SOURCE : "https://github.com/JackA1ltman/Google-GCC-Android-4.9.git"
-  #GCC_32_BRANCH : "arm32"
+  GCC_GNU : false
+  GCC_64_SOURCE : "https://github.com/JackA1ltman/Google-GCC-Android-4.9.git"
+  GCC_64_BRANCH : "aarch64"
+  GCC_32_SOURCE : "https://github.com/JackA1ltman/Google-GCC-Android-4.9.git"
+  GCC_32_BRANCH : "arm32"
 
   DEFCONFIG_SOURCE: ""
   DEFCONFIG_NAME : "vendor/bengal-perf_defconfig"
@@ -124,14 +124,14 @@ jobs:
           echo "CONFIG_KSU_KPROBES_HOOK=n" >> ./arch/arm64/configs/${{ env.DEFCONFIG_NAME }}
           echo "CONFIG_KSU_LSM_SECURITY_HOOKS=y" >> ./arch/arm64/configs/${{ env.DEFCONFIG_NAME }}
 
-      - name: 🧰 Patch Kernel of Re:Kernel
-        uses: ./.github/workflows/patch-rekernel
+     # - name: 🧰 Patch Kernel of Re:Kernel
+     #   uses: ./.github/workflows/patch-rekernel
 
-      - name: 💿 Patch Kernel of Droidspaces
-        uses: ./.github/workflows/patch-droidspaces
+     # - name: 💿 Patch Kernel of Droidspaces
+     #   uses: ./.github/workflows/patch-droidspaces
 
-      - name: 🔒 Patch Kernel of Baseband Guard
-        uses: ./.github/workflows/patch-baseband-guard
+     # - name: 🔒 Patch Kernel of Baseband Guard
+     #   uses: ./.github/workflows/patch-baseband-guard
 
       - name: 🚀 Build Process
         uses: ./.github/workflows/build-process
