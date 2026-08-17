@@ -95,7 +95,7 @@ env:
 jobs:
   build-kernel:
     name: Redmi Note 7 (Based AOSP A15)
-    runs-on: ubuntu-latest # u can changed to ubuntu 22.04, and need container set ubuntu-latest
+    runs-on: ubuntu-22.04 # u can changed to ubuntu 22.04, and need container set ubuntu-latest
     # container: ubuntu:focal # if u need use arch linux -> archlinux/archlinux:latest or ubuntu 20.04 -> ubuntu:focal
     env:
       CCACHE_COMPILERCHECK: "%compiler% -dumpmachine; %compiler% -dumpversion"
@@ -125,7 +125,7 @@ jobs:
 
           # Lower KernelSU Next need it.
           echo "CONFIG_KSU_KPROBES_HOOK=n" >> ./arch/arm64/configs/${{ env.DEFCONFIG_NAME }}
-          echo "CONFIG_KSU_LSM_SECURITY_HOOKS=y" >> ./arch/arm64/configs/${{ env.DEFCONFIG_NAME }}
+          #echo "CONFIG_KSU_LSM_SECURITY_HOOKS=y" >> ./arch/arm64/configs/${{ env.DEFCONFIG_NAME }}
 
      # - name: 🧰 Patch Kernel of Re:Kernel
      #   uses: ./.github/workflows/patch-rekernel
