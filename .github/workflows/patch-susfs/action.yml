@@ -70,17 +70,17 @@ runs:
           }
 
           # Check SuSFS
-          #if grep -q "CONFIG_CINTAKU" "fs/namespace.c"; then
-          #  echo "[-] SuSFS is already patched, Skipped."
-          #  echo "SUSFS_SKIP=true" >> $GITHUB_ENV
+          if grep -q "CONFIG_CINTAKU" "fs/namespace.c"; then
+            echo "[-] SuSFS is already patched, Skipped."
+            echo "SUSFS_SKIP=true" >> $GITHUB_ENV
 
-          #else
+          else
             cp /tmp/Patches/Patch/susfs_patch_to_${{ env.KERNEL_VERSION }}.patch ./
 
             patch -p1 < susfs_patch_to_${{ env.KERNEL_VERSION }}.patch || true
             echo "[+] SuSFS Patch completed."
 
-          #fi
+          fi
 
           # Patch .rej find
           if [[ "${{ env.BUILD_DEBUGGER }}" == "true" ]]; then
