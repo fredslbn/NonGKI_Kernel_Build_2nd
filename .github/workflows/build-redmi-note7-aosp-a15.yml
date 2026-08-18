@@ -14,7 +14,7 @@ env:
   #EXTRA_CMDS : "LD=ld.lld LLVM=1"
 
   KERNEL_SOURCE : "https://github.com/nnippon99/kernel_xiaomi_chime.git"
-  KERNEL_BRANCH : "4.19-rt"
+  KERNEL_BRANCH : "tithonia"
 
   #CLANG_SOURCE : "https://github.com/liliumproject/clang-experimental/releases/download/20240619/lilium_clang-20240619-experimental.tar.gz"
   #CLANG_BRANCH : ""
