@@ -12,7 +12,7 @@ env:
   CUSTOM_CMDS : "CLANG_TRIPLE=aarch64-linux-gnu-"
   EXTRA_CMDS : "LD=ld.lld LLVM=1 LLVM_IAS=1"
 
-  KERNEL_SOURCE : "https://github.com/liliumproject/kernel_xiaomi_chime.git"
+  KERNEL_SOURCE : "https://github.com/fredslbn/kernel_xiaomi_chime.git"
   KERNEL_BRANCH : "ursinia"
 
   CLANG_SOURCE : "https://github.com/liliumproject/clang/releases/download/20250912/lilium_clang-20250912.tar.gz"
