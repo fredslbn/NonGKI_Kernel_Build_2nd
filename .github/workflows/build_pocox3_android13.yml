@@ -15,7 +15,7 @@ env:
   KERNEL_SOURCE : "https://github.com/fredslbn/android_kernel_xiaomi_surya.git"
   KERNEL_BRANCH : "rethinking"
 
-  CLANG_SOURCE : "https://github.com/llvm/llvm-project/releases/download/llvmorg-14.0.6/clang+llvm-14.0.6-x86_64-linux-gnu-rhel-8.4.tar.xz"
+  CLANG_SOURCE : "https://github.com/Impqxr/aosp_clang_ci/releases/download/13289611/clang-13289611-linux-x86.tar.xz"
   CLANG_BRANCH : ""
 
   GCC_GNU : false
@@ -25,7 +25,7 @@ env:
   GCC_32_BRANCH : "android12L-release"
 
   DEFCONFIG_SOURCE: ""
-  DEFCONFIG_NAME : "vendor/cezanne_user_defconfig"
+  DEFCONFIG_NAME : "surya_defconfig"
   DEFCONFIG_ORIGIN_IMAGE: ""
   DEFCONFIG_FROM_BOOT: false
 
