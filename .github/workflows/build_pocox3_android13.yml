@@ -121,14 +121,14 @@ jobs:
           cd $GITHUB_WORKSPACE/device_kernel
           # Nothing
 
-      - name: 🧰 Patch Kernel of Re:Kernel
-        uses: ./.github/workflows/patch-rekernel
+     # - name: 🧰 Patch Kernel of Re:Kernel
+     #   uses: ./.github/workflows/patch-rekernel
 
-      - name: 💿 Patch Kernel of Droidspaces
-        uses: ./.github/workflows/patch-droidspaces
+    #  - name: 💿 Patch Kernel of Droidspaces
+    #    uses: ./.github/workflows/patch-droidspaces
 
-      - name: 🔒 Patch Kernel of Baseband Guard
-        uses: ./.github/workflows/patch-baseband-guard
+    #  - name: 🔒 Patch Kernel of Baseband Guard
+    #    uses: ./.github/workflows/patch-baseband-guard
 
       - name: 🚀 Build Process
         uses: ./.github/workflows/build-process
