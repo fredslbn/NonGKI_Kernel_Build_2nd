@@ -35,8 +35,8 @@ env:
   KERNELSU_AUTO_GET : "true" # if u want easy setting kernelsu, u can true.
   KERNELSU_AUTO_FORK : "resukisu" # magic, rsuntk, next, resukisu and sukisu
 
-  SUSFS_ENABLE : true
-  SUSFS_FIXED : true
+  SUSFS_ENABLE : false
+  SUSFS_FIXED : false
 
   AK3_SOURCE : "https://github.com/Cilok-LAB/AK3-Surya.git"
   AK3_BRANCH : "staging"
@@ -91,7 +91,7 @@ env:
 
 jobs:
   build-kernel:
-    name: Redmi K30 Ultra (Based AOSP A14)
+    name: Build Poco X3 (Based AOSP A13)
     runs-on: ubuntu-latest # u can changed to ubuntu 22.04, and need container set ubuntu-latest
     # container: archlinux/archlinux:latest # if u need use arch linux -> archlinux/archlinux:latest or ubuntu 20.04 -> ubuntu:focal
     env:
