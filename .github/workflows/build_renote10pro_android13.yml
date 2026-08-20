@@ -15,7 +15,7 @@ env:
   KERNEL_SOURCE : "https://github.com/fredslbn/android_kernel_xiaomi_sweet.git"
   KERNEL_BRANCH : "arrow-13.1"
 
-  CLANG_SOURCE : "https://github.com/Impqxr/aosp_clang_ci/releases/download/13289611/clang-13289611-linux-x86.tar.xz"
+  CLANG_SOURCE : "https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.7/LLVM-19.1.7-Linux-X64.tar.xz"
   CLANG_BRANCH : ""
 
   GCC_GNU : false
