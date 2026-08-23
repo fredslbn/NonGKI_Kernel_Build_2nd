@@ -6,7 +6,7 @@ on:
 
 env:
   # Device env
-  DEVICE_NAME : "redmi_note7"
+  DEVICE_NAME : "poco_m3"
   DEVICE_CODENAME : "citrus"
 
   CUSTOM_CMDS : "CLANG_TRIPLE=aarch64-linux-gnu-"
