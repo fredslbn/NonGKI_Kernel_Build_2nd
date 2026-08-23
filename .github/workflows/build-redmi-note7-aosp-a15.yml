@@ -6,15 +6,15 @@ on:
 
 env:
   # Device env
-  DEVICE_NAME : "redmi_note7"
-  DEVICE_CODENAME : "lavender"
+  DEVICE_NAME : "poco_m3"
+  DEVICE_CODENAME : "chime"
 
   CUSTOM_CMDS : "CLANG_TRIPLE=aarch64-linux-gnu-"
   EXTRA_CMDS : "LD=ld.lld LLVM=1 LLVM_IAS=1"
   #EXTRA_CMDS : "LD=ld.lld LLVM=1"
 
-  KERNEL_SOURCE : "https://github.com/fredslbn/kernel_chime.git"
-  KERNEL_BRANCH : "main"
+  KERNEL_SOURCE : "https://github.com/fredslbn/android_kernel_qcom_sdm660.git"
+  KERNEL_BRANCH : "lineage-20"
 
   #CLANG_SOURCE : "https://github.com/liliumproject/clang-experimental/releases/download/20240619/lilium_clang-20240619-experimental.tar.gz"
   #CLANG_BRANCH : ""
@@ -40,10 +40,10 @@ env:
   KERNELSU_AUTO_FORK : "resukisu" # xxksu, rsuntk, next, resukisu and sukisu
   #KERNELSU_AUTO_FORK : "xxksu"
 
-  SUSFS_ENABLE : true
-  SUSFS_FIXED : true
+  SUSFS_ENABLE : false
+  SUSFS_FIXED : false
 
-  AK3_SOURCE : "https://github.com/Braeed/AnyKernel3.git"
+  AK3_SOURCE : "https://github.com/Cilok-LAB/AK3-Surya.git"
   AK3_BRANCH : "master"
 
   BOOT_SOURCE : ""
@@ -56,7 +56,7 @@ env:
   # Other env
   PYTHON_VERSION: "3" # Only 2(Ubuntu 22.04 and Ubuntu 20.04) or 3(Any OS Versions).
 
-  PACK_METHOD: "Anykernel3" # Anykernel3 need SOURCE and BRANCH, MKBOOTIMG needn't it.
+  PACK_METHOD: "Anykernel3" "# Anykernel3 need SOURCE and BRANCH, MKBOOTIMG needn't it.
   PACK_KMODULES: "false" # if u want pack kernel modules (.ko) into Anykernel3.
 
   KERNELSU_METHOD: "shell" # shell, manual and only.
