@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 env:
-  # Device env
+#
   DEVICE_NAME : "poco_m3"
   DEVICE_CODENAME : "citrus"
 
