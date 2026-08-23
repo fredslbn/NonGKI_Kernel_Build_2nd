@@ -67,7 +67,7 @@ jobs:
       fail-fast: true
     uses: ./.github/workflows/build-redmi-8-aosp-a15-419.yml
     secrets: inherit
-  
+
   build_pocom3_android13:
     name: "Poco M3 (Based AOSP A13)"
     strategy:
