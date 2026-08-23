@@ -87,14 +87,7 @@ jobs:
     strategy:
       fail-fast: true
     uses: ./.github/workflows/build_pocox3_android13.yml
-    secrets: inherit
-
-  build-redmi-note7-aosp-a15:
-    name: "Redmi Note 7 (Based AOSP A15)"
-    strategy:
-      fail-fast: true
-    uses: ./.github/workflows/build-redmi-note7-aosp-a15.yml
-    secrets: inherit
+    secrets: inherit  
 
   build-redmi-note11pro-5g-aosp-a16:
     name: "Redmi Note 11 Pro 5G (Based AOSP A16)"
