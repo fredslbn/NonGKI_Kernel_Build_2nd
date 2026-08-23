@@ -6,7 +6,7 @@ on:
 
 env:
   # Device env
-  DEVICE_NAME : "poco_m3"
+  DEVICE_NAME : "redmi-note7-aosp-a15"
   DEVICE_CODENAME : "chime"
 
   CUSTOM_CMDS : "CLANG_TRIPLE=aarch64-linux-gnu-"
