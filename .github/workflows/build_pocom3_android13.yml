@@ -5,7 +5,8 @@ on:
   workflow_dispatch:
 
 env:
-  DEVICE_NAME : "poco_me"
+  # Device env
+  DEVICE_NAME : "redmi_note7"
   DEVICE_CODENAME : "citrus"
 
   CUSTOM_CMDS : "CLANG_TRIPLE=aarch64-linux-gnu-"
