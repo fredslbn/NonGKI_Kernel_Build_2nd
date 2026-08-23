@@ -1,4 +1,4 @@
-name: Build POCO M3 (Based AOSP A13)
+name: Build Redmi Note 7 (Based AOSP A15)
 
 on:
   workflow_call:
