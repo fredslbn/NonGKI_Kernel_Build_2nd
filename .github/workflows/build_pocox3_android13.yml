@@ -64,7 +64,7 @@ env:
 
   REKERNEL_ENABLE: "false" # if u need Re:Kernel.
   DROIDSPACES_ENABLE: "false" # if u need Droidspaces or LXC/Docker.
-  NOMOUNT_ENABLE: "true" # if u need NoMount.
+  NOMOUNT_ENABLE: "false" # if u need NoMount.
 
   HOOK_METHOD: "syscall" # Manual hook method -> syscall.
 
@@ -130,8 +130,8 @@ jobs:
     #  - name: 🔒 Patch Kernel of Baseband Guard
     #    uses: ./.github/workflows/patch-baseband-guard
 
-      - name: 🔒 Patch Kernel of nomount
-        uses: ./.github/workflows/patch-nomount
+    #  - name: 🔒 Patch Kernel of nomount
+    #    uses: ./.github/workflows/patch-nomount
 
       - name: 🚀 Build Process
         uses: ./.github/workflows/build-process
