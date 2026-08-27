@@ -12,7 +12,7 @@ env:
   CUSTOM_CMDS : "CLANG_TRIPLE=aarch64-linux-gnu-"
   EXTRA_CMDS : "LD=ld.lld LLVM=1 LLVM_IAS=1"
 
-  KERNEL_SOURCE : "https://github.com/mornye1517/kernel_xiaomi_stone.git"
+  KERNEL_SOURCE : "https://github.com/fredslbn/kernel_xiaomi_stone.git"
   KERNEL_BRANCH : "aosp"
 
   CLANG_SOURCE : "https://github.com/llvm/llvm-project/releases/download/llvmorg-22.1.2/LLVM-22.1.2-Linux-X64.tar.xz"
@@ -119,8 +119,6 @@ jobs:
         run: |
           # Only ${{ env.DEVICE_NAME }} use it.
           cd $GITHUB_WORKSPACE/device_kernel
-          
-          #echo "CONFIG_KPROBES=n" >> ./arch/${{ env.KERNEL_ARCH }}/configs/${{ env.DEFCONFIG_NAME }}
 
      # - name: 🧰 Patch Kernel of Re:Kernel
      #   uses: ./.github/workflows/patch-rekernel
