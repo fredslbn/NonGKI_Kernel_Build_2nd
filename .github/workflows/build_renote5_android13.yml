@@ -35,8 +35,8 @@ env:
   KERNELSU_AUTO_GET : "true" # if u want easy setting kernelsu, u can true.
   KERNELSU_AUTO_FORK : "resukisu" # magic, rsuntk, next, resukisu and sukisu
 
-  SUSFS_ENABLE : false
-  SUSFS_FIXED : false
+  SUSFS_ENABLE : true
+  SUSFS_FIXED : true
 
   AK3_SOURCE : "https://github.com/Cilok-LAB/AK3-Surya.git"
   AK3_BRANCH : "staging"
@@ -64,7 +64,7 @@ env:
 
   REKERNEL_ENABLE: "false" # if u need Re:Kernel.
   DROIDSPACES_ENABLE: "false" # if u need Droidspaces or LXC/Docker.
-  NOMOUNT_ENABLE: "true" # if u need NoMount.
+  NOMOUNT_ENABLE: "false" # if u need NoMount.
 
   HOOK_METHOD: "syscall" # Manual hook method -> syscall.
 
@@ -115,8 +115,8 @@ jobs:
       - name: 🔗 Patch for no-kprobe
         uses: ./.github/workflows/patch-no-kprobe
 
-      - name: 🔒 Patch Kernel of nomount
-        uses: ./.github/workflows/patch-nomount
+      #- name: 🔒 Patch Kernel of nomount
+      #  uses: ./.github/workflows/patch-nomount
       
       - name: 🚀 Build Process
         uses: ./.github/workflows/build-process
