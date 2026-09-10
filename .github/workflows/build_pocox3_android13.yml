@@ -13,7 +13,7 @@ env:
   EXTRA_CMDS : "LD=ld.lld LLVM=1 LLVM_IAS=1"
 
   KERNEL_SOURCE : "https://github.com/fredslbn/android_kernel_xiaomi_surya.git"
-  KERNEL_BRANCH : "rethinking"
+  KERNEL_BRANCH : "backup"
 
   CLANG_SOURCE : "https://github.com/Impqxr/aosp_clang_ci/releases/download/13289611/clang-13289611-linux-x86.tar.xz"
   CLANG_BRANCH : ""
