@@ -12,11 +12,11 @@ env:
   CUSTOM_CMDS : "CLANG_TRIPLE=aarch64-linux-gnu-"
   EXTRA_CMDS : "LD=ld.lld LLVM=1 LLVM_IAS=1"
 
-  # KERNEL_SOURCE : "https://github.com/fredslbn/kernel_chime.git"
-  # KERNEL_BRANCH : "backup"
+  KERNEL_SOURCE : "https://github.com/fredslbn/kernel_chime.git"
+  KERNEL_BRANCH : "backup"
   
-  KERNEL_SOURCE : "https://github.com/frstprjkt/valeryn_xiaomi_sm6115.git"
-  KERNEL_BRANCH : "android16"
+  # KERNEL_SOURCE : "https://github.com/frstprjkt/valeryn_xiaomi_sm6115.git"
+  # KERNEL_BRANCH : "android16"
 
   CLANG_SOURCE : "https://raw.githubusercontent.com/Neutron-Toolchains/antman/main/antman"
   CLANG_BRANCH : ""
